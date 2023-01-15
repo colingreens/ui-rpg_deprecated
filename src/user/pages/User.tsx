@@ -23,7 +23,7 @@ export default function User() {
             type="text"
             label="Username"
             validators={[VALIDATOR_REQUIRE]}
-            errorText="Please entery our user name"
+            errorText="Please enter your username"
             onInput={() => {}}
           />
           <Input
@@ -32,7 +32,7 @@ export default function User() {
             type="password"
             label="Password"
             validators={[VALIDATOR_MINLENGTH(5)]}
-            errorText="Please Enter a valid password of 5 characters"
+            errorText="Please enter a valid password of at least 5 characters"
             onInput={() => {}}
           />
           <Button type="submit">Login</Button>
