@@ -6,15 +6,9 @@ FONT SIZE SYSTEM (px)
 */
 
 /* 
-MAIN COLOR: #087f5b
-GREY COLOR: #343a40
+MAIN COLOR: 
+GREY COLOR:
 */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 @font-face {
   font-family: "press_start_regular";
@@ -30,4 +24,28 @@ GREY COLOR: #343a40
     url("./assets//fonts/prstartk-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -4,12 +4,14 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import User from "./assets/user/pages/User";
+import User from "../src/user/pages/User";
 import "./App.css";
+import MainNavigation from "./shared/components/Navigation/MainNavigation";
 
 function App() {
   return (
     <Router>
+      <MainNavigation />
       <Routes>
         <Route path="/" element={<User />} />
       </Routes>

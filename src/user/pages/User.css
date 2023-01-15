@@ -1,0 +1,28 @@
+* {
+  font-family: "press_start_kregular", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.login {
+  width: 30%;
+  max-width: 25rem;
+  margin: 7rem auto;
+  text-align: center;
+  color: antiquewhite;
+}
+
+.title {
+  font-size: 400%;
+  margin-bottom: 20%;
+  background: rgb(6, 251, 244);
+  background: linear-gradient(
+    0deg,
+    rgba(6, 251, 244, 1) 0%,
+    rgba(253, 45, 227, 1) 91%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
