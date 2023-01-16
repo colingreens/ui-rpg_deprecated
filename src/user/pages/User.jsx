@@ -1,3 +1,4 @@
+import useForm from "../../shared/hooks/form-hook.jsx";
 import Button from "../../shared/components/FormElements/Button";
 import Input from "../../shared/components/FormElements/Input";
 import Card from "../../shared/components/UIelements/Card";
@@ -8,6 +9,19 @@ import {
 import "./User.css";
 
 export default function User() {
+  const [formState, inputHandler, setFormData] = useForm(
+    {
+      name: {
+        value: "",
+        isValid: false,
+      },
+      password: {
+        value: "",
+        isValid: false,
+      },
+    },
+    false
+  );
   return (
     <Card className="center">
       <div className="login">
@@ -24,7 +38,7 @@ export default function User() {
             label="Username"
             validators={[VALIDATOR_REQUIRE]}
             errorText="Please enter your username"
-            onInput={() => {}}
+            onInput={inputHandler}
           />
           <Input
             element="input"
@@ -33,9 +47,11 @@ export default function User() {
             label="Password"
             validators={[VALIDATOR_MINLENGTH(5)]}
             errorText="Please enter a valid password of at least 5 characters"
-            onInput={() => {}}
+            onInput={inputHandler}
           />
-          <Button type="submit">Login</Button>
+          <Button type="submit" disabled={!formState.isValid}>
+            Login
+          </Button>
         </form>
       </div>
     </Card>
