@@ -21,10 +21,22 @@
     rgba(6, 251, 244, 1) 0%,
     rgba(253, 45, 227, 1) 91%
   );
+
+  animation: color-change 3s infinite linear;
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+}
+
+@-webkit-keyframes color-change {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
 }
 
 @media (max-width: 800px) {
