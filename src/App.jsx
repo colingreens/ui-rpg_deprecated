@@ -7,6 +7,7 @@ import {
 import User from "./user/pages/User";
 import "./App.css";
 import MainNavigation from "./shared/components/Navigation/MainNavigation";
+import CharacterSelect from "./user/pages/CharacterSelect";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       <MainNavigation />
       <Routes>
         <Route path="/" element={<User />} />
+      </Routes>
+      <Routes>
+        <Route path="/character" element={<CharacterSelect />} />
       </Routes>
     </Router>
   );

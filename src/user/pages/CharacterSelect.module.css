@@ -1,0 +1,21 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* 
+MAIN COLOR: 
+GREY COLOR: 
+*/
+
+.background-image {
+  background-image: linear-gradient(rgb(34, 34, 34, 0.4), rgb(34, 34, 34, 0.4)),
+    url("/retro-background-wide-full-extended-export.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left;
+  height: 90vh;
+}
