@@ -15,7 +15,23 @@ GREY COLOR:
   background-image: linear-gradient(rgb(34, 34, 34, 0.4), rgb(34, 34, 34, 0.4)),
     url("/retro-background-wide-full-extended-export.png");
   background-repeat: no-repeat;
-  background-size: auto;
-  background-position: left;
+  background-size: cover;
+  background-position: center;
   height: 90vh;
+}
+
+.title {
+  position: relative;
+  color: antiquewhite;
+  text-align: center;
+  top: 25%;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  background-color: rgba(129, 128, 128, 0.2);
+  margin: auto;
+  top: 75%;
+  transform: translate(0, -50%);
 }
