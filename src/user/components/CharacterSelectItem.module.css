@@ -1,6 +1,6 @@
 .card {
   position: relative;
-  left: 5%;
+  left: -5%;
   width: 600px;
   height: 600px;
   display: flex;
@@ -48,11 +48,32 @@
   filter: none;
 }
 
+.druid {
+  height: 400px;
+  width: 400px;
+  background-image: url("/druid-idle.png");
+  background-size: 130%;
+  background-position: center;
+  filter: grayscale(50%) contrast(50%) brightness(50%);
+  overflow: hidden;
+}
+
+.druid:hover {
+  background-image: url("/druid-idle.gif");
+  filter: none;
+}
+
+.druid-selected,
+.druid-selected:hover {
+  background-image: url("/druid-attack.gif");
+  filter: none;
+}
+
 .fire-mage {
   height: 400px;
   width: 400px;
   background-image: url("/fire-mage.png");
-  background-size: 120%;
+  background-size: 130%;
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(50%) contrast(50%) brightness(50%);
@@ -70,18 +91,21 @@
   filter: none;
 }
 
-.barb > .name,
 .archer > .name,
+.barb > .name,
+.druid > .name,
 .fire-mage > .name {
   text-align: center;
   color: rgba(0, 0, 0, 0);
 }
 
-.barb:hover > .name,
 .archer:hover > .name,
+.barb:hover > .name,
+.druid:hover > .name,
 .fire-mage:hover > .name,
-.barb-selected > .name,
 .archer-selected > .name,
+.barb-selected > .name,
+.druid-selected > .name,
 .fire-mage-selected > .name {
   text-align: center;
   color: antiquewhite;

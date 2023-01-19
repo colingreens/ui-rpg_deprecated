@@ -13,6 +13,7 @@ export default function CharacterSelect() {
           characterItems={[
             { name: "fire-mage" },
             { name: "archer" },
+            { name: "druid" },
             { name: "barb" },
           ]}
         />
