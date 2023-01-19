@@ -1,16 +1,20 @@
 .card {
   position: relative;
+  left: 50%;
+  transform: translate(-100%, 0);
   width: 400px;
   height: 400px;
+  display: flex;
 }
 
 .archer {
-  height: 300px;
-  width: auto;
-  background-image: url("/archer-idle1.png");
-  background-size: cover;
+  height: 400px;
+  width: 300px;
+  background-image: url("/archer-idle.png");
+  background-size: initial;
   background-position: center;
   filter: grayscale(50%) contrast(50%) brightness(50%);
+  overflow: hidden;
 }
 
 .archer:hover {
@@ -25,12 +29,13 @@
 }
 
 .barb {
-  height: 300px;
-  width: auto;
+  height: 400px;
+  width: 300px;
   background-image: url("/barb-idle.png");
-  background-size: cover;
+  background-size: initial;
   background-position: center;
   filter: grayscale(50%) contrast(50%) brightness(50%);
+  overflow: hidden;
 }
 
 .barb:hover {

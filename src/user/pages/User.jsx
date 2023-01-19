@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import useForm from "../../shared/hooks/form-hook.jsx";
 import Button from "../../shared/components/FormElements/Button";
 import Input from "../../shared/components/FormElements/Input";
@@ -9,6 +11,7 @@ import {
 import "./User.css";
 
 export default function User() {
+  let navigate = useNavigate();
   const [formState, inputHandler, setFormData] = useForm(
     {
       name: {
@@ -27,8 +30,8 @@ export default function User() {
       <div className="login">
         <h1 className="title">GAME TITLE</h1>
         <form
-          onClick={() => {
-            console.log("submitted");
+          onSubmit={() => {
+            navigate("/character");
           }}
         >
           <Input
