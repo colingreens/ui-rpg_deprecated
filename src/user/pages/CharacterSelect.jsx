@@ -10,7 +10,11 @@ export default function CharacterSelect() {
       </div>
       <div className={classes.container}>
         <CharacterSelectList
-          characterItems={[{ name: "archer" }, { name: "barb" }]}
+          characterItems={[
+            { name: "fire-mage" },
+            { name: "archer" },
+            { name: "barb" },
+          ]}
         />
       </div>
     </div>

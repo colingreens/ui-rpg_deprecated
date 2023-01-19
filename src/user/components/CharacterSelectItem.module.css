@@ -1,15 +1,14 @@
 .card {
   position: relative;
-  left: 50%;
-  transform: translate(-100%, 0);
-  width: 400px;
-  height: 400px;
+  left: 5%;
+  width: 600px;
+  height: 600px;
   display: flex;
 }
 
 .archer {
   height: 400px;
-  width: 300px;
+  width: 200px;
   background-image: url("/archer-idle.png");
   background-size: initial;
   background-position: center;
@@ -30,7 +29,7 @@
 
 .barb {
   height: 400px;
-  width: 300px;
+  width: 200px;
   background-image: url("/barb-idle.png");
   background-size: initial;
   background-position: center;
@@ -49,16 +48,41 @@
   filter: none;
 }
 
+.fire-mage {
+  height: 400px;
+  width: 400px;
+  background-image: url("/fire-mage.png");
+  background-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(50%) contrast(50%) brightness(50%);
+  overflow: hidden;
+}
+
+.fire-mage:hover {
+  background-image: url("/fire-mage-idle.gif");
+  filter: none;
+}
+
+.fire-mage-selected,
+.fire-mage-selected:hover {
+  background-image: url("/fire-mage-attack.gif");
+  filter: none;
+}
+
 .barb > .name,
-.archer > .name {
+.archer > .name,
+.fire-mage > .name {
   text-align: center;
   color: rgba(0, 0, 0, 0);
 }
 
 .barb:hover > .name,
 .archer:hover > .name,
+.fire-mage:hover > .name,
 .barb-selected > .name,
-.archer-selected > .name {
+.archer-selected > .name,
+.fire-mage-selected > .name {
   text-align: center;
   color: antiquewhite;
 }
