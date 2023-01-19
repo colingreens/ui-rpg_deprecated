@@ -1,0 +1,59 @@
+.card {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.archer {
+  height: 300px;
+  width: auto;
+  background-image: url("/archer-idle1.png");
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(50%) contrast(50%) brightness(50%);
+}
+
+.archer:hover {
+  background-image: url("/archer-idle.gif");
+  filter: none;
+}
+
+.archer-selected,
+.archer-selected:hover {
+  background-image: url("/archer-taunt.gif");
+  filter: none;
+}
+
+.barb {
+  height: 300px;
+  width: auto;
+  background-image: url("/barb-idle.png");
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(50%) contrast(50%) brightness(50%);
+}
+
+.barb:hover {
+  background-image: url("/barb-idle.gif");
+  filter: none;
+}
+
+.barb-selected,
+.barb-selected:hover {
+  background-image: url("/barb-taunt.gif");
+  filter: none;
+}
+
+.barb > .name,
+.archer > .name {
+  text-align: center;
+  color: rgba(0, 0, 0, 0);
+}
+
+.barb:hover > .name,
+.archer:hover > .name,
+.barb-selected > .name,
+.archer-selected > .name {
+  text-align: center;
+  color: antiquewhite;
+}
