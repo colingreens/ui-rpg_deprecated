@@ -9,6 +9,7 @@
   margin-right: 1rem;
   text-decoration: none;
   display: inline-block;
+  transition: all 0.2s;
 }
 
 .button:focus {
@@ -19,6 +20,16 @@
 .button:active {
   background: #ff4382;
   border-color: #ff4382;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .button--inverse {
