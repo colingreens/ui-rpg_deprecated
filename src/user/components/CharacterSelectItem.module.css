@@ -14,6 +14,7 @@
   background-position: center;
   filter: grayscale(50%) contrast(50%) brightness(50%);
   overflow: hidden;
+  animation: moveInLeft 1s ease-out;
 }
 
 .archer:hover {
@@ -35,6 +36,7 @@
   background-position: center;
   filter: grayscale(50%) contrast(50%) brightness(50%);
   overflow: hidden;
+  animation: moveInRight 1s ease-out;
 }
 
 .barb:hover {
@@ -56,6 +58,7 @@
   background-position: center;
   filter: grayscale(50%) contrast(50%) brightness(50%);
   overflow: hidden;
+  animation: moveInRight 1s ease-out;
 }
 
 .druid:hover {
@@ -78,6 +81,7 @@
   background-repeat: no-repeat;
   filter: grayscale(50%) contrast(50%) brightness(50%);
   overflow: hidden;
+  animation: moveInLeft 1s ease-out;
 }
 
 .fire-mage:hover {
@@ -109,4 +113,36 @@
 .fire-mage-selected > .name {
   text-align: center;
   color: antiquewhite;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
