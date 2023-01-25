@@ -16,8 +16,9 @@ GREY COLOR:
     url("/retro-background-wide-full-extended-export.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   height: 90vh;
+  min-width: 1200px;
 }
 
 .title {
@@ -27,15 +28,12 @@ GREY COLOR:
   top: 10%;
 }
 
-.container {
-  width: 90%;
+.characters {
+  width: 1200px;
   height: 40%;
   position: absolute;
   left: 50%;
   top: 80%;
   transform: translate(-50%, -50%);
   display: flex;
-  align-items: center;
-  align-content: center;
-  /* background-color: aliceblue; */
 }
