@@ -17,8 +17,8 @@ GREY COLOR:
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  height: 90vh;
-  min-width: 1200px;
+  height: 95vh;
+  position: relative;
 }
 
 .title {
@@ -29,10 +29,20 @@ GREY COLOR:
 }
 
 .characters {
-  width: 1200px;
-  height: 40%;
+  height: 30%;
+  width: 90%;
   position: absolute;
+  top: 40%;
   left: 50%;
-  top: 80%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
+  /* border: 1px solid crimson; */
+  max-width: 1200px;
+}
+
+@media (max-width: 400px) {
+  .characters {
+    height: 75%;
+    /* border: 1px solid crimson; */
+    top: 20%;
+  }
 }

@@ -1,17 +1,17 @@
 .card {
   position: relative;
-  left: -5%;
-  width: 600px;
-  height: 600px;
-  display: flex;
+  width: 25%;
+  height: 100%;
 }
 
 .archer {
-  height: 400px;
-  width: 200px;
+  height: 100%;
+  width: 100%;
+
   background-image: url("/archer-idle.png");
   background-size: initial;
   background-position: center;
+  margin-top: 10%;
   filter: grayscale(50%) contrast(50%) brightness(50%);
   overflow: hidden;
   animation: moveInLeft 1s ease-out;
@@ -29,8 +29,9 @@
 }
 
 .barb {
-  height: 400px;
-  width: 200px;
+  height: 100%;
+  width: 100%;
+  margin-top: 10%;
   background-image: url("/barb-idle.png");
   background-size: initial;
   background-position: center;
@@ -51,10 +52,10 @@
 }
 
 .druid {
-  height: 400px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
   background-image: url("/druid-idle.png");
-  background-size: 130%;
+  background-size: 500px;
   background-position: center;
   filter: grayscale(50%) contrast(50%) brightness(50%);
   overflow: hidden;
@@ -73,10 +74,10 @@
 }
 
 .fire-mage {
-  height: 400px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
   background-image: url("/fire-mage.png");
-  background-size: 130%;
+  background-size: 500px;
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(50%) contrast(50%) brightness(50%);
@@ -144,5 +145,27 @@
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    height: 230px;
+    width: 167px;
+    border: 1px solid blue;
+  }
+
+  .archer {
+    margin-top: 20%;
+    background-size: 600px;
+  }
+  .barb {
+    background-size: 600px;
+  }
+  .druid {
+    background-size: 400px;
+  }
+  .fire-mage {
+    background-size: 400px;
   }
 }

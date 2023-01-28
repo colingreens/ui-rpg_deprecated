@@ -1,7 +1,17 @@
 .list {
   height: 100%;
-  width: 100%;
   display: flex;
-  align-items: center;
-  align-content: center;
+  position: relative;
+  /* border: 1px solid yellow; */
+  margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+  .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    position: relative;
+    border: 1px solid yellow;
+    margin: 0 auto;
+  }
 }
