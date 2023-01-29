@@ -2,8 +2,8 @@
   height: 100%;
   display: flex;
   position: relative;
-  /* border: 1px solid yellow; */
   margin: 0 auto;
+  gap: 5px;
 }
 
 @media (max-width: 400px) {
@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     position: relative;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     margin: 0 auto;
   }
 }

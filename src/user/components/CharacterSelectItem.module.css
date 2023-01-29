@@ -1,7 +1,8 @@
 .card {
   position: relative;
-  width: 25%;
+  width: 30%;
   height: 100%;
+  /* border: 1px solid blue; */
 }
 
 .archer {
@@ -13,7 +14,6 @@
   background-position: center;
   margin-top: 10%;
   filter: grayscale(50%) contrast(50%) brightness(50%);
-  overflow: hidden;
   animation: moveInLeft 1s ease-out;
 }
 
@@ -36,7 +36,6 @@
   background-size: initial;
   background-position: center;
   filter: grayscale(50%) contrast(50%) brightness(50%);
-  overflow: hidden;
   animation: moveInRight 1s ease-out;
 }
 
@@ -58,7 +57,6 @@
   background-size: 500px;
   background-position: center;
   filter: grayscale(50%) contrast(50%) brightness(50%);
-  overflow: hidden;
   animation: moveInRight 1s ease-out;
 }
 
@@ -81,7 +79,6 @@
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(50%) contrast(50%) brightness(50%);
-  overflow: hidden;
   animation: moveInLeft 1s ease-out;
 }
 
@@ -152,7 +149,7 @@
   .card {
     height: 230px;
     width: 167px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
 
   .archer {
