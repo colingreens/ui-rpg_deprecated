@@ -1,0 +1,37 @@
+.background {
+  background-color: darkcyan;
+  height: 30vh;
+}
+
+.stage {
+  height: 35vh;
+  background-color: #777;
+  width: 100%;
+  display: flex;
+}
+
+.player {
+  height: 100%;
+  width: 50%;
+  border: 1px solid white;
+  background-image: url("../../../public/druid-idle.gif");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 450px;
+}
+
+.enemy {
+  height: 100%;
+  width: 50%;
+  border: 1px solid black;
+  background-image: url("../../../public/fire-mage-idle.gif");
+  background-position: left;
+  background-size: 450px;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+
+.cards {
+  background-color: khaki;
+  height: 28vh;
+}
