@@ -1,20 +1,28 @@
 .background {
-  background-color: darkcyan;
-  height: 30vh;
+  height: 90vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(19, 19, 20, 0.8),
+      rgba(67, 4, 73, 0.8)
+    ),
+    url("/retro-snow-background-export.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
 .stage {
+  margin-top: 30vh;
   height: 35vh;
-  background-color: #777;
   width: 100%;
   display: flex;
 }
 
 .player {
   height: 100%;
-  width: 50%;
-  border: 1px solid white;
-  background-image: url("../../../public/druid-idle.gif");
+  width: 35%;
+  /* border: 1px solid white; */
+  background-image: url("/druid-idle.gif");
   background-position: left;
   background-repeat: no-repeat;
   background-size: 450px;
@@ -22,9 +30,9 @@
 
 .enemy {
   height: 100%;
-  width: 50%;
-  border: 1px solid black;
-  background-image: url("../../../public/fire-mage-idle.gif");
+  width: 65%;
+  /* border: 1px solid red; */
+  background-image: url("/fire-mage-idle.gif");
   background-position: left;
   background-size: 450px;
   background-repeat: no-repeat;
@@ -32,6 +40,6 @@
 }
 
 .cards {
-  background-color: khaki;
-  height: 28vh;
+  background-color: darkgreen;
+  height: 26vh;
 }
