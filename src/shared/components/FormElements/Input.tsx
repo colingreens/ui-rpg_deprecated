@@ -67,6 +67,7 @@ export default function Input(props: {
         id={props.id}
         type={props.type}
         placeholder={props.placeholder}
+        autoComplete="off"
         onChange={changeHandler}
         onBlur={touchHandler}
         value={inputState.value}

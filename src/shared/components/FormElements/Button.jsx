@@ -3,17 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./Button.css";
 
-export default function Button(props: {
-  href?: any;
-  inverse?: any;
-  danger?: any;
-  children?: any;
-  size?: any;
-  to?: any;
-  type?: any;
-  onClick?: any;
-  disabled?: any;
-}) {
+export default function Button(props) {
   if (props.href) {
     return (
       <a
